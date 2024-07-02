@@ -14,4 +14,27 @@ jobs:
 
     steps:
     - name: Chechout code
-      uses: actions/checkout
+      uses: actions/checkout@v2
+
+    - name : Set up node.js
+      uses : actions/setup-node
+      with :
+        node-version: "14"
+
+    - name: Install HTMLHint
+      run: npm install -g htmlhint
+
+    - name: Install Stylelint
+      run: npm install -g stylelint stylelint-config-standard
+
+    - name: Install ESLint
+      run: npm install -g eslint
+
+    - name: Lint HTML
+      run: htmlhint "index.html"
+
+    - name: Lint CSS
+      run: stylelint "**/*.css"
+
+    - name: Lint JavaScript
+      run: eslint "script.js"
