@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Pipeline Game</title>
+    <link rel="stylesheet" href="/styles.8986bff4.css">
+<script src="/styles.8986bff4.js"></script></head>
+<body>
+    <div class="container">
+        <h1>Build Your DevOps Pipeline</h1>
+        <div class="instructions">
+            <p>Drag and drop the stages to create a DevOps pipeline.</p>
+        </div>
+        <div class="pipeline">
+            <div class="dropzone" id="dropzone1"></div>
+            <div class="dropzone" id="dropzone2"></div>
+            <div class="dropzone" id="dropzone3"></div>
+            <div class="dropzone" id="dropzone4"></div>
+            <div class="dropzone" id="dropzone5"></div>
+            <div class="dropzone" id="dropzone6"></div>
+            <div class="dropzone" id="dropzone7"></div>
+        </div>
+        <div class="stages">
+            <div class="stage" draggable="true" id="plan">Plan</div>
+            <div class="stage" draggable="true" id="code">Code</div>
+            <div class="stage" draggable="true" id="build">Build</div>
+            <div class="stage" draggable="true" id="test">Test</div>
+            <div class="stage" draggable="true" id="deploy">Deploy</div>
+            <div class="stage" draggable="true" id="monitor">Monitor</div>
+            <div class="stage" draggable="true" id="operate">Operate</div>
+        </div>
+        <button class="check-button" onclick="checkPipeline()">Check Pipeline</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="/script.75da7f30.js"></script>
+</body>
+</html>
